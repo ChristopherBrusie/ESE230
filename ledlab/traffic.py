@@ -14,7 +14,7 @@ GPIO.setup(26,GPIO.OUT)
 
 start_time = time.time()
 cur_time = start_time
-for j in range(2):
+for j in range(3):
     GPIO.output(8,True)
     GPIO.output(18,True)
     GPIO.output(10,True)
