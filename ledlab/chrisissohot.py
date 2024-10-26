@@ -4,6 +4,7 @@ import time
 pressed = False
 counter = 0
 current = time.time()
+last_pressed = False;
 
 while(True):
     if(time.time() > current + .05):
