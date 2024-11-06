@@ -45,8 +45,88 @@ def countdown():
     GPIO.output(ePin, True)
     GPIO.output(dPin, True)
 
+    time.sleep(1)
+
     # Displaying 6
-    
+    GPIO.output(aPin, True)
+    GPIO.output(fPin, True)
+    GPIO.output(gPin, True)
+    GPIO.output(bPin, False)
+    GPIO.output(cPin, True)
+    GPIO.output(dPin, True)
+    GPIO.output(ePin, True)
+
+    time.sleep(1)
+
+    # Displaying 5
+    GPIO.output(ePin, False)
+
+    time.sleep(1)
+
+    # Displaying 4
+    GPIO.output(aPin, False)
+    GPIO.output(fPin, True)
+    GPIO.output(gPin, True)
+    GPIO.output(bPin, True)
+    GPIO.output(cPin, True)
+    GPIO.output(dPin, False)
+    GPIO.output(ePin, False)
+
+    time.sleep(1)
+
+    # Displaying 3
+    GPIO.output(aPin, True)
+    GPIO.output(fPin, False)
+    GPIO.output(gPin, True)
+    GPIO.output(bPin, True)
+    GPIO.output(cPin, True)
+    GPIO.output(dPin, True)
+    GPIO.output(ePin, False)
+
+    time.sleep(1)
+
+    # Displaying 2
+    GPIO.output(aPin, True)
+    GPIO.output(fPin, False)
+    GPIO.output(gPin, True)
+    GPIO.output(bPin, True)
+    GPIO.output(cPin, False)
+    GPIO.output(dPin, True)
+    GPIO.output(ePin, True)
+
+    time.sleep(1)
+
+    # Displaying 1
+    GPIO.output(aPin, False)
+    GPIO.output(fPin, False)
+    GPIO.output(gPin, False)
+    GPIO.output(bPin, True)
+    GPIO.output(cPin, True)
+    GPIO.output(dPin, False)
+    GPIO.output(ePin, False)
+
+    time.sleep(1)
+
+    # Now we FLASH
+    for i in range(2):
+        GPIO.output(aPin, True)
+        GPIO.output(fPin, True)
+        GPIO.output(gPin, True)
+        GPIO.output(bPin, True)
+        GPIO.output(cPin, True)
+        GPIO.output(dPin, True)
+        GPIO.output(ePin, True)
+        time.sleep(.2)
+        GPIO.output(aPin, False)
+        GPIO.output(fPin, False)
+        GPIO.output(gPin, False)
+        GPIO.output(bPin, False)
+        GPIO.output(cPin, False)
+        GPIO.output(dPin, False)
+        GPIO.output(ePin, False)
+        time.sleep(.2)
+
+
 
 
 while True:
@@ -55,8 +135,3 @@ while True:
     else:
         for i in pinList:
             GPIO.output(i,False)
-       
-
-
-    
-    
